@@ -5,7 +5,7 @@ var userdata = require('./js/userdata'),
 
 if (userEmail) {
     el.className = el.className.replace(/\bo-ft-signin--anonymous\b/, '');
-    el.innerHTML = userEmail;
+    el.title = 'Logged in as ' + userEmail;
 }
 
 // ,

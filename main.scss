@@ -9,18 +9,21 @@ $o-ft-signin-is-silent: false !default;
 
 .o-ft-signin {
 	@extend %o-ft-header__topbar__item;
-}
-
-.o-ft-signin--anonymous {
 	font-size: 0;
 	color: rgba(0,0,0,0);
 	&:hover {
 		text-decoration: none;
 	}
-	&:after {
+	&:after { 
 		font-size: 25px;
 		content: '\f020';
-		color: #888;
+		color: #ffffff;
 	}
 }
 
+.o-ft-signin--anonymous {
+	font-size: 0;
+	&:after { 
+		color: #ffffff;
+	}
+}
