@@ -9,6 +9,7 @@ $o-ft-signin-is-silent: false !default;
 
 .o-ft-signin {
 	@extend %o-ft-header__topbar__item;
+	@extend %o-ft-header__topbar__item--active;
 	font-size: 0;
 	color: rgba(0,0,0,0);
 	&:hover {
@@ -22,6 +23,7 @@ $o-ft-signin-is-silent: false !default;
 }
 
 .o-ft-signin--anonymous {
+	@extend %o-ft-header__topbar__item--inactive;
 	font-size: 0;
 	&:after { 
 		color: #ffffff;
