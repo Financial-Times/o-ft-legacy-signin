@@ -9,7 +9,6 @@ $o-ft-signin-is-silent: false !default;
 
 .o-ft-signin {
 	@extend %o-ft-header__topbar__item;
-	@extend %o-ft-header__topbar__item--active;
 	font-size: 0;
 	&:hover {
 		text-decoration: none;
@@ -20,7 +19,7 @@ $o-ft-signin-is-silent: false !default;
 	}
 }
 
-.o-ft-signin--anonymous {
-	@extend %o-ft-header__topbar__item--inactive;
+.o-ft-signin--logged-in {
+	@extend %o-ft-header__topbar__item--active;
 	font-size: 0;
 }
