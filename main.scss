@@ -1,22 +1,27 @@
+@import "o-fonts/main";
 @import "o-ft-header/main";
+@import "o-hoverable/main";
 
-$o-ft-signin-is-silent: false !default;
+$o-ft-signin-is-silent: true !default;
 
-/* Load fonts */
-@if (not $o-ft-signin-is-silent) {
-	@include oFontsInclude(BentonSans);
-}
+@include oFontsInclude(BentonSans);
 
 .o-ft-signin {
 	@extend %o-ft-header__topbar__item;
 	font-size: 0;
-	&:hover {
-		text-decoration: none;
-	}
 	&:after { 
 		font-size: 25px;
 		content: '\f020';
 	}
+}
+
+
+#{$o-hoverable-if-hover-enabled} {
+	.o-ft-signin {
+		&:hover {
+			text-decoration: none;
+		}
+	}	
 }
 
 .o-ft-signin--logged-in {

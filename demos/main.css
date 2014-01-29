@@ -68,10 +68,20 @@ html, body {
 
   .o-grid-row-compact > .o-ft-header__topbar__content {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .o-ft-header__topbar__content {
+    padding-right: 0; }
+    .o-ft-header__topbar__content > .o-grid-row {
+      margin-right: 0; } }
 @media screen {
   .o-ft-header__topbar__content {
     max-width: none; }
+
+  .o-ft-header__topbar__content {
+    padding-right: 0; }
+    .o-ft-header__topbar__content > .o-grid-row {
+      margin-right: 0; }
 
   .o-ft-header__topbar__content {
     float: none;
@@ -124,6 +134,13 @@ html, body {
 .o-useragent-ie7 .o-ft-header__topbar__content, .o-useragent-ie8 .o-ft-header__topbar__content {
   width: 960px;
   max-width: none; }
+.o-useragent-ie7 .o-ft-header__topbar__content,
+.o-useragent-ie8 .o-ft-header__topbar__content {
+  padding-right: 0; }
+  .o-useragent-ie7 .o-ft-header__topbar__content > .o-grid-row,
+  .o-useragent-ie8 .o-ft-header__topbar__content > .o-grid-row {
+    margin-right: 0; }
+
 /**
  * Colour palette
  *
@@ -217,29 +234,44 @@ html, body {
   min-width: 50px;
   height: 50px;
   text-align: center;
-  color: #fff;
-  background-color: #333;
+  color: white;
+  background-color: #333333;
+  border-left: 1px solid #74736c;
   font-family: BentonSans-normal, Helvetica, Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
   cursor: pointer; }
-  .o-ft-signin:hover {
-    color: #ddd; }
+  .o-hoverable-on .o-ft-signin:hover {
+    color: #2e6e9e;
+    background-color: #e9decf; }
 
-/* Load fonts */
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  .o-ft-signin:last-child {
+    border-right: 1px solid #74736c; } }
+.o-useragent-ie7 .o-ft-signin:last-child, .o-useragent-ie8 .o-ft-signin:last-child {
+  border-right: 1px solid #74736c; }
+
+@media screen and (min-width: 1401px) {
+  .o-ft-signin:last-child {
+    border-right: 1px solid #74736c; } }
+.o-ft-signin--logged-in {
+  color: #2e6e9e;
+  background-color: #e9decf; }
+
 @font-face {
   font-family: BentonSans-normal;
   font-style: normal;
   font-weight: normal;
   src: url(../bower_components/o-fonts/webfonts/BentonSans-normal.eot);
   src: url(../bower_components/o-fonts/webfonts/BentonSans-normal.eot?#iefix) format("embedded-opentype"), url(../bower_components/o-fonts/webfonts/BentonSans-normal.woff) format("woff"), url(../bower_components/o-fonts/webfonts/BentonSans-normal.ttf) format("truetype"); }
-
-.o-ft-signin--anonymous {
-  font-size: 0;
-  color: rgba(0, 0, 0, 0); }
-  .o-ft-signin--anonymous:hover {
-    text-decoration: none; }
-  .o-ft-signin--anonymous:after {
+.o-ft-signin {
+  font-size: 0; }
+  .o-ft-signin:after {
     font-size: 25px;
-    content: '\f020';
-    color: #888; }
+    content: '\f020'; }
+
+.o-hoverable-on .o-ft-signin:hover {
+  text-decoration: none; }
+
+.o-ft-signin--logged-in {
+  font-size: 0; }

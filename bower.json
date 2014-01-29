@@ -3,8 +3,8 @@
   "main": ["main.js", "main.scss"],
   "ignore": ["Gruntfile.js", "package.json", "demos/*"],
   "dependencies": {
-  	"o-colors": "https://github.com/Financial-Times/o-colors.git#>=2.0.0",
-  	"o-fonts": "https://github.com/Financial-Times/o-fonts.git#>=0.5.0",
+    "o-fonts": "https://github.com/Financial-Times/o-fonts.git#>=0.5.0",
+    "o-hoverable": "https://github.com/Financial-Times/o-hoverable.git",
     "o-cookies": "https://github.com/Financial-Times/o-cookies.git",
     "o-ft-header": "https://github.com/Financial-Times/o-ft-header.git#partials"
   },
