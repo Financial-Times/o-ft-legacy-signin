@@ -6,7 +6,7 @@
     "o-fonts": "https://github.com/Financial-Times/o-fonts.git#>=0.5.0",
     "o-hoverable": "https://github.com/Financial-Times/o-hoverable.git",
     "o-cookies": "https://github.com/Financial-Times/o-cookies.git",
-    "o-ft-header": "https://github.com/Financial-Times/o-ft-header.git#partials"
+    "o-ft-header": "https://github.com/Financial-Times/o-ft-header.git#>=0.5.0"
   },
   "browserFeatures": {
   	"required": "querySelector"
