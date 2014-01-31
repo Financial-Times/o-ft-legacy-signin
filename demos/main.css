@@ -267,7 +267,7 @@ html, body {
 .o-ft-signin {
   font-size: 0; }
   .o-ft-signin:after {
-    font-size: 25px;
+    font-size: 26px;
     content: '\f020'; }
 
 .o-hoverable-on .o-ft-signin:hover {

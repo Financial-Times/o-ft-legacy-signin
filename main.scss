@@ -10,11 +10,10 @@ $o-ft-signin-is-silent: true !default;
 	@extend %o-ft-header__topbar__item;
 	font-size: 0;
 	&:after { 
-		font-size: 25px;
+		font-size: 26px;
 		content: '\f020';
 	}
 }
-
 
 #{$o-hoverable-if-hover-enabled} {
 	.o-ft-signin {
