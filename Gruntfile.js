@@ -15,13 +15,13 @@ module.exports = function(grunt) {
     'origami-demo': {
       options: {
         scriptMode: 'browserify',
-        modernizr: false,
+        modernizr: true,
         main: ["main.mustache"]
       }
     },
     watch: {
       'origami-demo': {
-          files: ['*.scss', 'main.mustache', 'bower-components/**/*'],
+          files: ['./main.scss', './main.js', 'main.mustache', 'tpl/*', 'bower-components/**/*', 'js/**/*', '!tmp.scss'],
           tasks: ['origami-demo']
       }
     }

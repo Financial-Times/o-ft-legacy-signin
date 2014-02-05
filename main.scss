@@ -1,10 +1,15 @@
 @import "o-fonts/main";
 @import "o-ft-header/main";
+@import "o-ft-forms/main";
 @import "o-hoverable/main";
+@import "o-dialog/main";
+@import "o-ft-typography/main";
 
+$o-ft-forms-is-silent: false !default;
 $o-ft-signin-is-silent: true !default;
 
-@include oFontsInclude(BentonSans);
+@include oFontsInclude(BentonSans); // for icons
+@include oFontsInclude(BentonSans, lighter); // for form heading
 
 .o-ft-signin {
 	@extend %o-ft-header__topbar__item;
@@ -27,3 +32,40 @@ $o-ft-signin-is-silent: true !default;
 	@extend %o-ft-header__topbar__item--active;
 	font-size: 0;
 }
+
+
+
+
+.o-ft-signin__form {
+	@extend %o-dialog--modal__content !optional;
+}
+
+.o-ft-signin__heading {
+	@extend %o-dialog__heading !optional;
+}
+
+.o-ft-signin__body {
+	@extend %o-dialog__body !optional;
+	padding-top: 10px;
+}
+
+.o-ft-signin__form {
+	fieldset{
+		border: none;
+		padding: 0;
+	}
+
+	input[type=submit] {
+		float: right;
+	}
+}
+
+.o-ft-signin__forgotten {
+	@extend %o-ft-typography-body !optional;
+	@extend %o-ft-typography-body__link !optional;
+}
+
+// %o-dialog--modal__content
+// %o-dialog__close
+// %o-dialog__heading
+// %o-dialog__body
