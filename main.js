@@ -1,30 +1,25 @@
 "use strict";
-var Dialog = require('o-dialog'),
+
+var $ = require('jquery'),
+    Dialog = require('o-dialog'),
     userdata = require('./js/userdata'),
-    el = document.querySelector('.o-ft-signin'),
+    $el = $('.o-ft-signin'),
+    el = $el[0],
     userEmail = userdata.getEmail();
 
-// function removeEventListener(el, eventName, handler) {
-//     if (el.removeEventListener) {
-//         el.removeEventListener(eventName, handler);
-//     } else {
-//         el.detachEvent('on' + eventName, handler);
-//     }
-// }
-
-function addEventListener(el, eventName, handler) {
-    if (el.addEventListener) {
-        el.addEventListener(eventName, handler);
-    } else {
-        el.attachEvent('on' + eventName, handler);
-    }
-}
-
 if (userEmail) {
-    el.className = el.className + ' o-ft-signin--logged-in';
+    $el.addClass('o-ft-signin--logged-in');
     el.title = 'Logged in as ' + userEmail;
+    $el.data('o-dialog__trigger', null).removeAttr('data-o-dialog__trigger');
+} else {
+    $el.on('click', function (ev) {
+        ev.preventDefault();
+    });
 }
 
-addEventListener(el, 'click', function (ev) {
-    ev.defaultPrevented = true;
-});
+
+module.exports = {
+    fillInRedirectUrl: function () {
+        $('.o-ft-signin__location-field')[0].value = window.location.href;
+    }
+};

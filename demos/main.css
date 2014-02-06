@@ -1137,7 +1137,7 @@ textarea.o-ft-forms__field {
 
 /* Lists */
 .o-ft-signin__form {
-  border: 2px solid white; }
+  border: 5px solid #a7a59b; }
 
 .o-dialog__close {
   position: absolute;

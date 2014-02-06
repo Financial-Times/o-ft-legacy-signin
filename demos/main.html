@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if IE 7]>         <html class="no-js o-useragent-ie7 o-hoverable-on"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js o-useragent-ie7 o-hoverable-on"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js o-useragent-ie8 o-hoverable-on"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js o-hoverable-on"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
@@ -12,7 +12,7 @@
 <body>
 	<a href="https://registration.ft.com/registration/barrier/login" 
 	class="o-ft-signin" 
-	data-o-dialog__trigger='{"preset": "modal", "src": ".o-ft-signin__modal-template", "innerClasses": "o-ft-signin__form", "headingSelector": ".o-ft-signin__heading", "bodySelector":".o-ft-signin__body"}'>
+	data-o-dialog__trigger='{"preset": "modal", "src": ".o-ft-signin__modal-template", "innerClasses": "o-ft-signin__form", "headingSelector": ".o-ft-signin__heading", "bodySelector":".o-ft-signin__body", "onAfterRender": "o-ft-signin#fillInRedirectUrl"}'>
 anonymous
 </a> 
 <script class="o-ft-signin__modal-template" type="text/template">
@@ -21,18 +21,19 @@ anonymous
 
 	<fieldset>
 		<div>
-			<label class="o-ft-forms__label" for="ftLogin-username">Email address</label>
-			<input class="o-ft-forms__field" id="ftLogin-username" name="username" type="text">
+			<label class="o-ft-forms__label">Email address</label>
+			<input class="o-ft-forms__field" name="username" type="text">
 		</div>
 		<div>
-			<label class="o-ft-forms__label" for="ftLogin-password">Password</label>
-			<input class="o-ft-forms__field" id="ftLogin-password" name="password" class="text" type="password">
+			<label class="o-ft-forms__label">Password</label>
+			<input class="o-ft-forms__field" name="password" class="text" type="password">
 		</div>
 	</fieldset>
 
 	<a href="https://registration.ft.com/registration/login/forgottenpassword?forgottenPasswordUsername=&amp;location=" class="o-ft-signin__forgotten">Forgot password?</a>
 	<fieldset>
-		<input id="ftLogin-remember" name="rememberme" class="o-ft-forms__field" type="checkbox" checked="checked">
+		<input name="location" type="hidden" class="o-ft-signin__location-field" />
+		<input name="rememberme" class="o-ft-forms__field" type="checkbox" checked="checked">
 		<label class="o-ft-forms__label o-ft-forms__label--inline" for="ftLogin-remember">Remember me on this computer</label>
 	</fieldset>
 	<input type="submit" class="o-ft-forms__button o-ft-forms__button--medium" value="Send" />
