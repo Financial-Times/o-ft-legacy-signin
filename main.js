@@ -16,6 +16,7 @@ if (userEmail) {
     });
 } else {
     $el.data('o-dialog__trigger').onAfterRender = function () {
-        $('.o-ft-signin__location-field')[0].value = window.location.href;
+        $('.o-ft-signin__location-field')[0].value = encodeURIComponent(window.location.href);
+        $('.o-ft-signin__referer-field')[0].value = encodeURIComponent(window.location.origin);
     };
 }
