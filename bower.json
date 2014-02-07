@@ -14,7 +14,7 @@
     "o-hoverable": "https://github.com/Financial-Times/o-hoverable.git",
     "o-cookies": "https://github.com/Financial-Times/o-cookies.git",
     "o-ft-forms": "https://github.com/Financial-Times/o-ft-forms.git",
-    "o-ft-header": "https://github.com/Financial-Times/o-ft-header.git#>=0.5.2",
+    "o-ft-header": "https://github.com/Financial-Times/o-ft-header.git#master",
     "o-dialog": "https://github.com/Financial-Times/o-dialog.git#~0.0.7",
     "jquery": ">=1.5 <2"
   },
