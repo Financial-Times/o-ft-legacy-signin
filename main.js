@@ -12,14 +12,7 @@ if (userEmail) {
     el.title = 'Logged in as ' + userEmail;
     $el.data('o-dialog__trigger', null).removeAttr('data-o-dialog__trigger');
 } else {
-    $el.on('click', function (ev) {
-        ev.preventDefault();
-    });
-}
-
-
-module.exports = {
-    fillInRedirectUrl: function () {
+    $el.data('o-dialog__trigger').onAfterRender = function () {
         $('.o-ft-signin__location-field')[0].value = window.location.href;
-    }
-};
+    };
+}
