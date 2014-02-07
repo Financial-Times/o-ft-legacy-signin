@@ -250,16 +250,17 @@ html, body {
 .o-ft-header__topbar__items {
   text-align: right;
   overflow: hidden;
-  height: 50px; }
+  height: 50px;
+  float: right; }
 
 .o-ft-signin {
-  display: inline-block;
+  float: left;
   min-width: 50px;
   height: 50px;
   text-align: center;
   color: white;
   background-color: #333333;
-  border-left: 1px solid #505050;
+  border-right: 1px solid #505050;
   font-family: BentonSans-normal, Helvetica, Arial, sans-serif;
   font-size: 25px;
   line-height: 50px;
@@ -267,16 +268,15 @@ html, body {
   .o-hoverable-on .o-ft-signin:hover {
     color: #2e6e9e;
     background-color: #e9decf; }
+  .o-ft-signin:first-child {
+    border-left: 1px solid #505050; }
 
-@media screen and (min-width: 1001px) and (max-width: 1400px) {
-  .o-ft-signin:last-child {
-    border-right: 1px solid #505050; } }
-.o-useragent-ie7 .o-ft-signin:last-child, .o-useragent-ie8 .o-ft-signin:last-child {
-  border-right: 1px solid #505050; }
-
-@media screen and (min-width: 1401px) {
-  .o-ft-signin:last-child {
-    border-right: 1px solid #505050; } }
+@media screen and (max-width: 600px) {
+  .o-ft-header__topbar__items {
+    border-right: none; } }
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .o-ft-header__topbar__items {
+    border-right: none; } }
 .o-ft-signin--logged-in {
   color: #2e6e9e;
   background-color: #e9decf; }
