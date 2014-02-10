@@ -10,6 +10,17 @@ html, body {
 /* 
 	Deprecates support for ie7 or 8, making sure that both browser specific and lt- selectors are removed
 */
+.o-ft-signin__icon:before {
+  content: "\e022"; }
+
+/*
+	This mixin allows ie7 and 8 to be targeted using either
+	* specific classes for each of ie7 and ie8
+	* 'less than' classes targeting ie versions less than a given version e.g. lt-ie9 & lt-ie8
+*/
+/* 
+	Deprecates support for ie7 or 8, making sure that both browser specific and lt- selectors are removed
+*/
 /* 
 	Note: The identically named mixins and functions below is not a mistake; it means they can be used to either 
 	output a string or to wrap some style rules in a selector
@@ -1253,11 +1264,30 @@ textarea.o-ft-forms__field {
   font-weight: normal;
   src: url(../bower_components/o-fonts/webfonts/BentonSans-lighter.eot);
   src: url(../bower_components/o-fonts/webfonts/BentonSans-lighter.eot?#iefix) format("embedded-opentype"), url(../bower_components/o-fonts/webfonts/BentonSans-lighter.woff) format("woff"), url(../bower_components/o-fonts/webfonts/BentonSans-lighter.ttf) format("truetype"); }
-.o-ft-signin {
-  font-size: 0; }
-  .o-ft-signin:after {
-    font-size: 26px;
-    content: '\f020'; }
+.o-ft-signin span {
+  display: none; }
+
+.o-ft-signin__icon {
+  font-size: 26px; }
+
+@font-face {
+  font-family: "ft-icons";
+  src: url(../bower_components/o-ft-icons/build/ft-icons.eot);
+  src: url(../bower_components/o-ft-icons/build/ft-icons.eot?#iefix) format("embedded-opentype"), url(../bower_components/o-ft-icons/build/ft-icons.woff) format("woff"), url(../bower_components/o-ft-icons/build/ft-icons.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.o-ft-signin__icon {
+  font-family: "ft-icons";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .o-hoverable-on .o-ft-signin:hover {
   text-decoration: none; }

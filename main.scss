@@ -1,4 +1,5 @@
 @import "o-fonts/main";
+@import "o-ft-icons/main";
 @import "o-ft-header/main";
 @import "o-ft-forms/main";
 @import "o-hoverable/main";
@@ -13,12 +14,17 @@ $o-ft-signin-is-silent: true !default;
 
 .o-ft-signin {
 	@extend %o-ft-header__topbar__item;
-	font-size: 0;
-	&:after { 
-		font-size: 26px;
-		content: '\f020';
+
+	span {
+		display: none;	
 	}
 }
+
+.o-ft-signin__icon {
+	font-size: 26px;
+}
+
+@include o-ft-icons-icon-as-class(profile, o-ft-signin__icon);
 
 #{$o-hoverable-if-hover-enabled} {
 	.o-ft-signin {
