@@ -10,7 +10,7 @@ html, body {
 /* 
 	Deprecates support for ie7 or 8, making sure that both browser specific and lt- selectors are removed
 */
-.o-ft-signin__icon:before {
+.o-ft-legacy-signin__icon:before {
   content: "\e022"; }
 
 /*
@@ -172,16 +172,16 @@ html, body {
  * The status must be 'DEPRECATED' or absent
  * You can have as many spaces between each entry as you like (so you can line them up neatly), and you *MUST* finish each line with a comma (except the final entry, which should not have a comma).
  */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   background-color: white; }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   color: #333333; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   background-color: #a7a59b; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   color: white; }
 
 .o-dialog__close {
@@ -264,7 +264,7 @@ html, body {
   height: 50px;
   float: right; }
 
-.o-ft-signin {
+.o-ft-legacy-signin {
   float: left;
   min-width: 50px;
   height: 50px;
@@ -276,10 +276,10 @@ html, body {
   font-size: 25px;
   line-height: 50px;
   cursor: pointer; }
-  .o-hoverable-on .o-ft-signin:hover {
+  .o-hoverable-on .o-ft-legacy-signin:hover {
     color: #2e6e9e;
     background-color: #e9decf; }
-  .o-ft-signin:first-child {
+  .o-ft-legacy-signin:first-child {
     border-left: 1px solid #505050; }
 
 @media screen and (max-width: 600px) {
@@ -288,7 +288,7 @@ html, body {
 @media screen and (min-width: 601px) and (max-width: 1000px) {
   .o-ft-header__topbar__items {
     border-right: none; } }
-.o-ft-signin--logged-in {
+.o-ft-legacy-signin--logged-in {
   color: #2e6e9e;
   background-color: #e9decf; }
 
@@ -451,16 +451,16 @@ html, body {
  * The status must be 'DEPRECATED' or absent
  * You can have as many spaces between each entry as you like (so you can line them up neatly), and you *MUST* finish each line with a comma (except the final entry, which should not have a comma).
  */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   background-color: white; }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   color: #333333; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   background-color: #a7a59b; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   color: white; }
 
 .o-dialog__close {
@@ -746,16 +746,16 @@ textarea.o-ft-forms__field {
  * The status must be 'DEPRECATED' or absent
  * You can have as many spaces between each entry as you like (so you can line them up neatly), and you *MUST* finish each line with a comma (except the final entry, which should not have a comma).
  */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   background-color: white; }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   color: #333333; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   background-color: #a7a59b; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   color: white; }
 
 .o-dialog__close {
@@ -809,17 +809,17 @@ textarea.o-ft-forms__field {
   overflow-y: hidden; }
 
 .o-dialog__body:after,
-.o-ft-signin__body:after {
+.o-ft-legacy-signin__body:after {
   content: " ";
   display: table;
   clear: both; }
 
 .o-useragent-ie7 .o-dialog__body,
-.o-useragent-ie7 .o-ft-signin__body {
+.o-useragent-ie7 .o-ft-legacy-signin__body {
   zoom: 1; }
 
 .o-dialog--full-height .o-dialog__body,
-.o-dialog--full-height .o-ft-signin__body {
+.o-dialog--full-height .o-ft-legacy-signin__body {
   overflow-y: auto; }
 
 .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body),
@@ -848,9 +848,9 @@ textarea.o-ft-forms__field {
   -ms-flex-line-pack: stretch;
   align-content: stretch; }
   .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-dialog__body,
-  .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-signin__body,
+  .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-legacy-signin__body,
   .flexboxlegacy .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-dialog__body,
-  .flexboxlegacy .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-signin__body {
+  .flexboxlegacy .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-legacy-signin__body {
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
     -webkit-box-flex: 1;
@@ -862,9 +862,9 @@ textarea.o-ft-forms__field {
     -ms-flex-item-align: auto;
     align-self: auto; }
   .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-dialog__heading,
-  .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-signin__heading,
+  .flexbox .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-legacy-signin__heading,
   .flexboxlegacy .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-dialog__heading,
-  .flexboxlegacy .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-signin__heading {
+  .flexboxlegacy .o-dialog--full-height .o-dialog__content:not(.o-dialog__body) .o-ft-legacy-signin__heading {
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
     -webkit-box-flex: 0;
@@ -1070,16 +1070,16 @@ textarea.o-ft-forms__field {
  * The status must be 'DEPRECATED' or absent
  * You can have as many spaces between each entry as you like (so you can line them up neatly), and you *MUST* finish each line with a comma (except the final entry, which should not have a comma).
  */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   background-color: white; }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   color: #333333; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   background-color: #a7a59b; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   color: white; }
 
 .o-dialog__close {
@@ -1107,16 +1107,16 @@ textarea.o-ft-forms__field {
  * The status must be 'DEPRECATED' or absent
  * You can have as many spaces between each entry as you like (so you can line them up neatly), and you *MUST* finish each line with a comma (except the final entry, which should not have a comma).
  */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   background-color: white; }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   color: #333333; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   background-color: #a7a59b; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   color: white; }
 
 .o-dialog__close {
@@ -1130,24 +1130,24 @@ textarea.o-ft-forms__field {
 /* Article subheadings */
 /* Body lead */
 /* Body */
-.o-ft-signin__forgotten {
+.o-ft-legacy-signin__forgotten {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333; }
 
 /* Sub-body */
-.o-ft-signin__forgotten {
+.o-ft-legacy-signin__forgotten {
   text-decoration: none;
   color: #2e6e9e;
   cursor: pointer; }
 
-.o-ft-signin__forgotten:hover {
+.o-ft-legacy-signin__forgotten:hover {
   color: black;
   cursor: pointer; }
 
 /* Lists */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   border: 5px solid #a7a59b; }
 
 .o-dialog__close {
@@ -1173,7 +1173,7 @@ textarea.o-ft-forms__field {
     color: white;
     content: '\00d7'; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   font-size: 14px;
   margin: 0;
   padding: 10px;
@@ -1181,13 +1181,13 @@ textarea.o-ft-forms__field {
   font-weight: normal;
   font-family: BentonSans-lighter, Helvetica, Arial, sans-serif; }
 
-.o-ft-signin__body {
+.o-ft-legacy-signin__body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px; }
 
-.o-dialog--closable.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--closable.o-dialog--modal .o-ft-legacy-signin__heading {
   padding-right: 35px; }
 
 /**
@@ -1212,16 +1212,16 @@ textarea.o-ft-forms__field {
  * The status must be 'DEPRECATED' or absent
  * You can have as many spaces between each entry as you like (so you can line them up neatly), and you *MUST* finish each line with a comma (except the final entry, which should not have a comma).
  */
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   background-color: white; }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
   color: #333333; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   background-color: #a7a59b; }
 
-.o-dialog--modal .o-ft-signin__heading {
+.o-dialog--modal .o-ft-legacy-signin__heading {
   color: white; }
 
 .o-dialog__close {
@@ -1235,19 +1235,19 @@ textarea.o-ft-forms__field {
 /* Article subheadings */
 /* Body lead */
 /* Body */
-.o-ft-signin__forgotten {
+.o-ft-legacy-signin__forgotten {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333; }
 
 /* Sub-body */
-.o-ft-signin__forgotten {
+.o-ft-legacy-signin__forgotten {
   text-decoration: none;
   color: #2e6e9e;
   cursor: pointer; }
 
-.o-ft-signin__forgotten:hover {
+.o-ft-legacy-signin__forgotten:hover {
   color: black;
   cursor: pointer; }
 
@@ -1264,10 +1264,10 @@ textarea.o-ft-forms__field {
   font-weight: normal;
   src: url(../bower_components/o-fonts/webfonts/BentonSans-lighter.eot);
   src: url(../bower_components/o-fonts/webfonts/BentonSans-lighter.eot?#iefix) format("embedded-opentype"), url(../bower_components/o-fonts/webfonts/BentonSans-lighter.woff) format("woff"), url(../bower_components/o-fonts/webfonts/BentonSans-lighter.ttf) format("truetype"); }
-.o-ft-signin span {
+.o-ft-legacy-signin span {
   display: none; }
 
-.o-ft-signin__icon {
+.o-ft-legacy-signin__icon {
   font-size: 26px; }
 
 @font-face {
@@ -1276,7 +1276,7 @@ textarea.o-ft-forms__field {
   src: url(../bower_components/o-ft-icons/build/ft-icons.eot?#iefix) format("embedded-opentype"), url(../bower_components/o-ft-icons/build/ft-icons.woff) format("woff"), url(../bower_components/o-ft-icons/build/ft-icons.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
-.o-ft-signin__icon {
+.o-ft-legacy-signin__icon {
   font-family: "ft-icons";
   display: inline-block;
   vertical-align: middle;
@@ -1289,17 +1289,17 @@ textarea.o-ft-forms__field {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.o-hoverable-on .o-ft-signin:hover {
+.o-hoverable-on .o-ft-legacy-signin:hover {
   text-decoration: none; }
 
-.o-ft-signin--logged-in {
+.o-ft-legacy-signin--logged-in {
   font-size: 0; }
 
-.o-ft-signin__body {
+.o-ft-legacy-signin__body {
   padding-top: 10px; }
 
-.o-ft-signin__form fieldset {
+.o-ft-legacy-signin__form fieldset {
   border: none;
   padding: 0; }
-.o-ft-signin__form input[type=submit] {
+.o-ft-legacy-signin__form input[type=submit] {
   float: right; }

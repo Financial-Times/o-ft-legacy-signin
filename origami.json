@@ -4,8 +4,5 @@
   "origamiVersion": 1,
   "support": "rhys.evans@ft.com",
   "supportStatus": "not implemented",
-  "demos": ["demos/main.html"],
-  "browserFeatures": {
-  	"required": "querySelector"
-  }
+  "demos": ["demos/main.html"]
 }

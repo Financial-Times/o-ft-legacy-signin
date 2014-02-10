@@ -3,12 +3,12 @@
 var $ = require('jquery'),
     Dialog = require('o-dialog'),
     userdata = require('./js/userdata'),
-    $el = $('.o-ft-signin'),
+    $el = $('.o-ft-legacy-signin'),
     el = $el[0],
     userEmail = userdata.getEmail();
 
 if (userEmail) {
-    $el.addClass('o-ft-signin--logged-in').find('span').html('Logged in as ' + userEmail);
+    $el.addClass('o-ft-legacy-signin--logged-in').find('span').html('Logged in as ' + userEmail);
     el.title = 'Logged in as ' + userEmail;
     $el.data('o-dialog__trigger', null).removeAttr('data-o-dialog__trigger');
     $el.on('click', function (ev) {
@@ -22,7 +22,7 @@ if (userEmail) {
         // ^https?://(?:[^./@]+\.)*ft\.wsodqa\.com(?![^/])
         // ^https?://(?:[^./@]+\.)*ft\.wallst\.com(?![^/])
         // ^https?://(?:[^./@]+\.)*moneymate\.com(?![^/])
-        $('.o-ft-signin__location-field')[0].value = encodeURIComponent(window.location.href);
-        // $('.o-ft-signin__referer-field')[0].value = encodeURIComponent(window.location.origin);
+        $('.o-ft-legacy-signin__location-field')[0].value = encodeURIComponent(window.location.href);
+        $('.o-ft-legacy-signin__referer-field')[0].value = encodeURIComponent(window.location.origin);
     };
 }

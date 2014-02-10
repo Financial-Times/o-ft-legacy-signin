@@ -7,12 +7,12 @@
 @import "o-ft-typography/main";
 
 $o-ft-forms-is-silent: false !default;
-$o-ft-signin-is-silent: true !default;
+$o-ft-legacy-signin-is-silent: true !default;
 
-@include oFontsInclude(BentonSans); // for icons
+@include oFontsInclude(BentonSans); // for form text
 @include oFontsInclude(BentonSans, lighter); // for form heading
 
-.o-ft-signin {
+.o-ft-legacy-signin {
 	@extend %o-ft-header__topbar__item;
 
 	span {
@@ -20,42 +20,39 @@ $o-ft-signin-is-silent: true !default;
 	}
 }
 
-.o-ft-signin__icon {
+.o-ft-legacy-signin__icon {
 	font-size: 26px;
 }
 
-@include o-ft-icons-icon-as-class(profile, o-ft-signin__icon);
+@include o-ft-icons-icon-as-class(profile, o-ft-legacy-signin__icon);
 
 #{$o-hoverable-if-hover-enabled} {
-	.o-ft-signin {
+	.o-ft-legacy-signin {
 		&:hover {
 			text-decoration: none;
 		}
 	}	
 }
 
-.o-ft-signin--logged-in {
+.o-ft-legacy-signin--logged-in {
 	@extend %o-ft-header__topbar__item--active;
 	font-size: 0;
 }
 
-
-
-
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
 	@extend %o-dialog--modal__content !optional;
 }
 
-.o-ft-signin__heading {
+.o-ft-legacy-signin__heading {
 	@extend %o-dialog__heading !optional;
 }
 
-.o-ft-signin__body {
+.o-ft-legacy-signin__body {
 	@extend %o-dialog__body !optional;
 	padding-top: 10px;
 }
 
-.o-ft-signin__form {
+.o-ft-legacy-signin__form {
 	fieldset{
 		border: none;
 		padding: 0;
@@ -66,12 +63,7 @@ $o-ft-signin-is-silent: true !default;
 	}
 }
 
-.o-ft-signin__forgotten {
+.o-ft-legacy-signin__forgotten {
 	@extend %o-ft-typography-body !optional;
 	@extend %o-ft-typography-body__link !optional;
 }
-
-// %o-dialog--modal__content
-// %o-dialog__close
-// %o-dialog__heading
-// %o-dialog__body
