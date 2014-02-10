@@ -22,7 +22,7 @@ if (userEmail) {
         // ^https?://(?:[^./@]+\.)*ft\.wsodqa\.com(?![^/])
         // ^https?://(?:[^./@]+\.)*ft\.wallst\.com(?![^/])
         // ^https?://(?:[^./@]+\.)*moneymate\.com(?![^/])
-        $('.o-ft-legacy-signin__location-field')[0].value = encodeURIComponent(window.location.href);
-        $('.o-ft-legacy-signin__referer-field')[0].value = encodeURIComponent(window.location.origin);
+        $('.o-ft-legacy-signin__location')[0].value = encodeURIComponent(window.location.href);
+        $('.o-ft-legacy-signin__referer')[0].value = encodeURIComponent(window.location.origin);
     };
 }
