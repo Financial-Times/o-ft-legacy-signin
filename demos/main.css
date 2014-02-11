@@ -10,6 +10,9 @@ html, body {
 /* 
 	Deprecates support for ie7 or 8, making sure that both browser specific and lt- selectors are removed
 */
+.o-useragent-ie7 .o-ft-legacy-signin__icon {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe022;&nbsp;'); }
+
 .o-ft-legacy-signin__icon:before {
   content: "\e022"; }
 
@@ -283,10 +286,16 @@ html, body {
     border-left: 1px solid #505050; }
 
 @media screen and (max-width: 600px) {
-  .o-ft-header__topbar__items {
+  .o-ft-legacy-signin:last-child {
+    border-right: none; }
+
+  .o-ft-legacy-signin--logged-in {
     border-right: none; } }
 @media screen and (min-width: 601px) and (max-width: 1000px) {
-  .o-ft-header__topbar__items {
+  .o-ft-legacy-signin:last-child {
+    border-right: none; }
+
+  .o-ft-legacy-signin--logged-in {
     border-right: none; } }
 .o-ft-legacy-signin--logged-in {
   color: #2e6e9e;
@@ -1132,6 +1141,7 @@ textarea.o-ft-forms__field {
 /* Body */
 .o-ft-legacy-signin__forgotten {
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #333333; }
@@ -1237,6 +1247,7 @@ textarea.o-ft-forms__field {
 /* Body */
 .o-ft-legacy-signin__forgotten {
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #333333; }
@@ -1267,9 +1278,6 @@ textarea.o-ft-forms__field {
 .o-ft-legacy-signin span {
   display: none; }
 
-.o-ft-legacy-signin__icon {
-  font-size: 26px; }
-
 @font-face {
   font-family: "ft-icons";
   src: url(../bower_components/o-ft-icons/build/ft-icons.eot);
@@ -1277,6 +1285,7 @@ textarea.o-ft-forms__field {
   font-weight: normal;
   font-style: normal; }
 .o-ft-legacy-signin__icon {
+  font-size: 26px;
   font-family: "ft-icons";
   display: inline-block;
   vertical-align: middle;

@@ -20,11 +20,13 @@ $o-ft-legacy-signin-is-silent: true !default;
 	}
 }
 
+@include oFtIconsFontFace();
+
 .o-ft-legacy-signin__icon {
 	font-size: 26px;
+	@include oFtIconsBaseIconStyles();
+    @extend %o-ft-icons-icon--profile;
 }
-
-@include o-ft-icons-icon-as-class(profile, o-ft-legacy-signin__icon);
 
 #{$o-hoverable-if-hover-enabled} {
 	.o-ft-legacy-signin {
