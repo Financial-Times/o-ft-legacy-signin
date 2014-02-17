@@ -6,7 +6,6 @@
 @import "o-dialog/main";
 @import "o-ft-typography/main";
 
-$o-ft-forms-is-silent: false !default;
 $o-ft-legacy-signin-is-silent: true !default;
 
 @include oFontsInclude(BentonSans); // for form text
@@ -59,13 +58,34 @@ $o-ft-legacy-signin-is-silent: true !default;
 		border: none;
 		padding: 0;
 	}
-
+	
 	input[type=submit] {
 		float: right;
+		@extend %o-ft-buttons__button !optional;
+		@extend %o-ft-buttons__button--medium !optional;
 	}
+
+	label {
+		@extend %o-ft-forms__label !optional;
+	}
+}
+
+label[for="o-ft-legacy-signin__rememberme"] {
+	@extend %o-ft-forms__checkboxradiolabel !optional;
+}
+
+.o-ft-legacy-signin__field {
+	@extend %o-ft-forms__field !optional;
+	// &[type=checkbox] {
+	// 	@extend %o-ft-forms__field--checkbox !optional;
+	// }
 }
 
 .o-ft-legacy-signin__forgotten {
 	@extend %o-ft-typography-body !optional;
 	@extend %o-ft-typography-body__link !optional;
+}
+
+#{$o-hoverable-if-hover-enabled} .o-ft-legacy-signin__forgotten:hover{
+	@extend %o-ft-typography-body__link--hover !optional;
 }
