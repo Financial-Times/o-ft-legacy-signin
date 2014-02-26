@@ -28,6 +28,6 @@ if (userEmail) {
         $('.o-ft-legacy-signin__location')[0].value = encodeURIComponent(window.location.href);
         $('.o-ft-legacy-signin__referer')[0].value = encodeURIComponent(window.location.origin);
     };
-    dialogConfig.src = fs.readFileSync('./tpl/sign-in.mustache', {encoding: 'utf8'});
+    dialogConfig.src = fs.readFileSync(__dirname + '/tpl/sign-in.mustache', 'utf8');
     dialogConfig.srcType = 'string';
 }
