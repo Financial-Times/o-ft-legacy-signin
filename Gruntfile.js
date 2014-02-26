@@ -15,8 +15,7 @@ module.exports = function(grunt) {
     'origami-demo': {
       options: {
         scriptMode: 'browserify',
-        modernizr: true,
-        main: ["main.mustache"]
+        modernizr: true
       }
     },
     watch: {
