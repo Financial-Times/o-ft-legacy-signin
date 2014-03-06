@@ -31,3 +31,9 @@ if (userEmail) {
     dialogConfig.src = fs.readFileSync(__dirname + '/tpl/sign-in.mustache', 'utf8');
     dialogConfig.srcType = 'string';
 }
+
+module.exports = {
+    open: function () {
+        Dialog.trigger(dialogConfig);
+    }
+};
