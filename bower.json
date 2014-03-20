@@ -17,7 +17,7 @@
     "o-ft-forms": "^0.5",
     "o-ft-header": "^0.6",
     "o-ft-typography": "^1.0.1",
-    "o-dialog": "https://github.com/Financial-Times/o-dialog.git#~0.0.8",
+    "o-dialog": "~0.0.8",
     "jquery": ">=1.5 <3"
   }
 }
