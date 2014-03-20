@@ -61,8 +61,8 @@ $o-ft-legacy-signin-is-silent: true !default;
 	
 	input[type=submit] {
 		float: right;
-		@extend %o-ft-buttons__button !optional;
-		@extend %o-ft-buttons__button--medium !optional;
+		@extend %o-ft-buttons;
+		@extend %o-ft-buttons--standout;
 	}
 
 	label {
@@ -71,7 +71,7 @@ $o-ft-legacy-signin-is-silent: true !default;
 }
 
 label[for="o-ft-legacy-signin__rememberme"] {
-	@extend %o-ft-forms__checkboxradiolabel !optional;
+	// @extend %o-ft-forms__checkboxradiolabel !optional;
 }
 
 .o-ft-legacy-signin__field {

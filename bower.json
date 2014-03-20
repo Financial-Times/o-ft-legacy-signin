@@ -10,17 +10,14 @@
     "demos"
   ],
   "dependencies": {
-    "o-ft-icons": "https://github.com/Financial-Times/o-ft-icons.git",
-    "o-fonts": "https://github.com/Financial-Times/o-fonts.git#>=0.6.0 <1",
-    "o-hoverable": "https://github.com/Financial-Times/o-hoverable.git",
-    "o-cookies": "https://github.com/Financial-Times/o-cookies.git",
-    "o-ft-forms": "https://github.com/Financial-Times/o-ft-forms.git",
-    "o-ft-header": "https://github.com/Financial-Times/o-ft-header.git#>=0.5.4 <1",
-    "o-ft-typography": "https://github.com/Financial-Times/o-ft-typography.git#>=1.0.1 <2",
+    "o-ft-icons": "^1",
+    "o-fonts": ">=0.6.0 <1",
+    "o-hoverable": "^0.1",
+    "o-cookies": "*",
+    "o-ft-forms": "^0.5",
+    "o-ft-header": "^0.6",
+    "o-ft-typography": "^1.0.1",
     "o-dialog": "https://github.com/Financial-Times/o-dialog.git#~0.0.8",
-    "jquery": ">=1.5 <2"
-  },
-  "devDependencies": {
-    "modernizr": ">=2.6.* <3"
+    "jquery": ">=1.5 <3"
   }
 }
