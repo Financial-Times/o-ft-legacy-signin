@@ -11,11 +11,11 @@
   ],
   "dependencies": {
     "o-ft-icons": "^1",
-    "o-fonts": ">=0.6.0 <1",
+    "o-fonts": ">=0.6.0 <2",
     "o-hoverable": "^0.1",
     "o-cookies": "*",
-    "o-ft-forms": "^0.5",
-    "o-ft-header": "^0.6",
+    "o-ft-forms": ">=0.5 <1",
+    "o-ft-header": ">=0.6 <2",
     "o-ft-typography": "^1.0.1",
     "o-dialog": "~0.0.8",
     "jquery": ">=1.5 <3"
