@@ -3,7 +3,7 @@
   "origamiType": "module",
   "origamiVersion": 1,
   "support": "rhys.evans@ft.com",
-  "supportStatus": "not implemented",
+  "supportStatus": "deprecated",
   "demos": [
     "/demos/main.html"
   ]
