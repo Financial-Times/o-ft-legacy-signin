@@ -1,4 +1,4 @@
-/*
+/**
  * grunt-contrib-uglify
  * http://gruntjs.com/
  *
@@ -10,27 +10,27 @@
 
 module.exports = function(grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    'origami-demo': {
-      options: {
-        scriptMode: 'browserify',
-        modernizr: true
-      }
-    },
-    watch: {
-      'origami-demo': {
-          files: ['./main.scss', './main.js', 'main.mustache', 'tpl/*', 'bower-components/**/*', 'js/**/*', '!tmp.scss'],
-          tasks: ['origami-demo']
-      }
-    }
-  });
+	// Project configuration.
+	grunt.initConfig({
+		'origami-demo': {
+			options: {
+				scriptMode: 'browserify',
+				modernizr: true
+			}
+		},
+		watch: {
+			'origami-demo': {
+					files: ['./main.scss', './main.js', 'main.mustache', 'tpl/*', 'bower-components/**/*', 'js/**/*', '!tmp.scss'],
+					tasks: ['origami-demo']
+			}
+		}
+	});
 
-  grunt.loadNpmTasks('grunt-origami-demoer');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-origami-demoer');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-  // By default, lint and run all tests.
-  grunt.registerTask('default', ['origami-demo']);
+	// By default, lint and run all tests.
+	grunt.registerTask('default', ['origami-demo']);
 
 };
