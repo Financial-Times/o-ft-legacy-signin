@@ -7,7 +7,7 @@
     "email": "next.team@ft.com",
     "slack": "financialtimes/ft-next-dev"
   },
-  "supportStatus": "deprecated",
+  "supportStatus": "dead",
   "demos": [
     "/demos/main.html"
   ]
